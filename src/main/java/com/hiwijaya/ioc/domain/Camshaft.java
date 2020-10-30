@@ -11,16 +11,20 @@ public class Camshaft {
 
     private String type;
 
+    public Camshaft(){
+        this.type = "double";
+    }
+
     public Camshaft(@Value("single")String type){   // single/double
         this.type = type;
     }
 
     public void camshaftType(){
-        if(type.equals("double")){
-            System.out.println("Double OverHead Camshaft");
-        }
-        else{
+        if(type.equals("single")){
             System.out.println("Single OverHead Camshaft");
+        }
+        else if(type.equals("double")){
+            System.out.println("Double OverHead Camshaft");
         }
     }
 

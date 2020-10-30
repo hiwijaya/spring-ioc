@@ -9,16 +9,16 @@
 
 
     <!--  Car car = new Car(engine);  -->
-    <bean id="car" class="com.hiwijaya.ioc.domain.car">
-        <constructor-arg ref="engine"/>
+    <bean id="car" class="com.hiwijaya.ioc.domain.Car">
+        <constructor-arg ref="combustionEngine"/>
     </bean>
 
-    <bean id="engine" class="com.hiwijaya.ioc.domain.engine">
+    <bean id="combustionEngine" class="com.hiwijaya.ioc.domain.CombustionEngine">
         <constructor-arg ref="camshaft"/>
         <constructor-arg ref="crankshaft"/>
     </bean>
 
-    <bean id="camshaft" class="com.hiwijaya.ioc.domain.camshaft"/>
-    <bean id="crankshaft" class="com.hiwijaya.ioc.domain.crankshaft"/>
+    <bean id="camshaft" class="com.hiwijaya.ioc.domain.Camshaft"/>
+    <bean id="crankshaft" class="com.hiwijaya.ioc.domain.Crankshaft"/>
 
 </beans>

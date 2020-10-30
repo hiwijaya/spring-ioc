@@ -11,7 +11,7 @@ public class XmlApp {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("basic-config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         Car car = context.getBean("car", Car.class);
         car.start();
 
